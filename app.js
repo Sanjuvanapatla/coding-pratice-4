@@ -69,7 +69,7 @@ app.post('/players/', async (request, response) => {
         '${role}'
       );`
   const player = await db.run(addPlayerQuery)
-  response.send(player)
+  response.send('Player Added to Team')
 })
 
 app.put('/players/:player_id/', async (request, response) => {
